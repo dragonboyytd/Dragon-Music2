@@ -99,7 +99,7 @@ var download = function(uri, filename, callback) {
 };
 
 client.on('message', function(message) {
-    const prefix = "Aa";
+    const prefix = "/";
     const member = message.member;
     const mess = message.content.toLowerCase();
     const args = message.content.split(' ').slice(1).join(' ');
