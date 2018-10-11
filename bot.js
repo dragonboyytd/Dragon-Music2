@@ -20,7 +20,7 @@ const developers = "344487452200796160";
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
       
-      if (message.content.startsWith(adminprefix + 'play')) {
+      if (message.content.startsWith(adminprefix + 'ply')) {
         client.user.setGame(argresult);
         message.channel.send(`**Ok, playing..** **${argresult}!**`).then(message =>{message.delete(11000)});
 
